@@ -85,7 +85,7 @@ foreach (@inputArr)
 ###############################Delete English##################################
 
 sub deleteEnglish{
-	@list = @_;
+
 	$backEng = 0;
 
 	if($list[0] == 1 && $list[1] == 1)
@@ -105,9 +105,10 @@ sub deleteEnglish{
 	elsif($list[0] == 1 && $list[1] == 0)
 	{
 #		print "Source is Non-Latin\n";
-		@F=split("\t");
-		if ($F[0] =~ m/[A-Za-z]/) {}
-		else {$backEng = 1; return $backEng;}
+		$backEng = 1; return $backEng;
+		#@F=split("\t");
+		#if ($F[0] =~ m/[A-Za-z]/) {}
+		#else {$backEng = 1; return $backEng;}
 	}
 }
 ###############################Delete Symbol##################################
