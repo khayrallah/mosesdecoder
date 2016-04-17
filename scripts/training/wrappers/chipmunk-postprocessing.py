@@ -1,3 +1,5 @@
+import sys
+
 i = sys.argv[1] 
 o =  sys.argv[2] 
 first =True
