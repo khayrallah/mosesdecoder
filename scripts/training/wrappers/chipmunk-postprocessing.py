@@ -14,7 +14,7 @@ with open(o,"w") as fout:
           fout.write("\n")
           first = True
       else: 
-        if first:
+        if not first:
           fout.write(" ")
           first = False
         line = line[1:]
