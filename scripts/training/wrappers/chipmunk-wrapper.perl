@@ -3,6 +3,8 @@
 # This file is part of moses.  Its use is licensed under the GNU Lesser General
 # Public License version 2.1 or, at your option, any later version.
 
+
+#this is the wrapper for the chipmunk stemmer (to be used as a factor)
 use warnings;
 use strict;
 
