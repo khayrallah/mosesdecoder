@@ -1,11 +1,11 @@
-in = sys.argv[1] 
-out =  sys.argv[2] 
+i = sys.argv[1] 
+o =  sys.argv[2] 
 first =True
 
 
 
-with open(out,"w") as fout:
-  with open(in) as fin:
+with open(o,"w") as fout:
+  with open(i) as fin:
     for line in fin:
       line = line.split()
       if line[0] == "*END*":
