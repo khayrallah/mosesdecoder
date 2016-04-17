@@ -11,16 +11,16 @@ with open(o,"w") as fout:
     for line in fin:
       line = line.split()
       if line[0] == "*END*":
-          out.write("\n")
+          fout.write("\n")
           first = True
       else: 
         if first:
-          out.write(" ")
+          fout.write(" ")
           first = False
         line = line[1:]
         words = []
         for word in line:
           words+= [word.split(":")[0]]
-        out.write(" ".join(words))
+        fout.write(" ".join(words))
 
     
