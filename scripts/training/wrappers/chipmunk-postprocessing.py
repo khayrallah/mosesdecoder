@@ -22,7 +22,6 @@ with open(o,"w") as fout:
             first = False
           else:
             fout.write(" ")
-            first = True
           words+= [word.split(":")[0]]
         fout.write(" ".join(words))
 
