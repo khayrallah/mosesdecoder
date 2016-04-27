@@ -22,12 +22,12 @@ with open(o_stem,"w") as fout_stem:
           for word in line:
             if first:
               first = False
-            else:
-              word = word.split(":")
-              if "ROOT" in word[1]:
-                words_stem += word[0]
-              else: 
-                words_morph += word[0]
+            #else:
+            word = word.split(":")
+            if "ROOT" in word[1]:
+              words_stem += word[0]
+            else: 
+              words_morph += word[0]
           fout.write(" ".join(words))
 
     
