@@ -107,7 +107,7 @@ sub prepare_for_transliteration
 		   {
 			$UNK{$tW[0]} = 1;
 		   }
-		   elsif (!($tW[0] =~ /[ a-zA-Z0-9.><\\\/]+/))
+		   elsif (!($tW[0] =~ /[a-zA-Z0-9.><\\\/]+/))
 		   {
 		   	$UNK{$tW[0]} = 1;
 
