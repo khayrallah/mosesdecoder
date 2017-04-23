@@ -13,6 +13,8 @@ with open(o,"w") as fout:
       if line[0] == "*END*":
           fout.write("\n")
           first = True
+      elif ":SPECIAL" in line:
+        fout.write(line[0])
       else: 
         line = line[1:]
         words = []
